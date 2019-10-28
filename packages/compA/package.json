@@ -1,6 +1,6 @@
 {
   "name": "@monorollup/compA",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "dist/index.js",
   "files": [
@@ -12,8 +12,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-  },
   "peerDependencies": {
     "react": "~16",
     "styled-jsx": "~3"
