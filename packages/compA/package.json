@@ -1,0 +1,22 @@
+{
+  "name": "@rollme2/compA",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.11.0"
+  },
+  "peerDependencies": {
+    "react": "~16",
+    "styled-jsx": "~3"
+  }
+}
