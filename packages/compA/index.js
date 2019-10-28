@@ -12,6 +12,7 @@ class HelloWorldA extends React.Component {
         <style jsx>{`
           h1 {
             color: red;
+            background: gray;
           }
         `}</style>
       </div>
