@@ -3,6 +3,7 @@
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var React = _interopDefault(require('react'));
+var CompA = _interopDefault(require('@monorollup/compA'));
 
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
@@ -85,7 +86,7 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(HelloWorldB).call(this, props));
     _this.state = {
-      message: "Hello World!"
+      message: "Hello WorldB!"
     };
     return _this;
   }
@@ -95,7 +96,7 @@ function (_React$Component) {
     value: function render() {
       var _this$state;
 
-      return React.createElement("div", null, React.createElement("h1", null, (_this$state = this.state) === null || _this$state === void 0 ? void 0 : _this$state.message));
+      return React.createElement("div", null, React.createElement("h1", null, (_this$state = this.state) === null || _this$state === void 0 ? void 0 : _this$state.message), React.createElement(CompA, null));
     }
   }]);
 
