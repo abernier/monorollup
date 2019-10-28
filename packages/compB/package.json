@@ -1,6 +1,6 @@
 {
   "name": "@monorollup/compB",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "description": "",
   "main": "dist/index.js",
   "files": [
@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@monorollup/compA": "^1.0.7",
+    "@monorollup/compA": "^1.0.8",
     "react": "^16.11.0"
   },
   "peerDependencies": {
