@@ -17,7 +17,7 @@
     "react": "^16.11.0"
   },
   "peerDependencies": {
-    "@rollme2/compA": "~1",
+    "@monorollup/compA": "~1",
     "react": "~16"
   }
 }
