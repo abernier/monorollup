@@ -1,5 +1,5 @@
 {
-  "name": "@rollme2/compA",
+  "name": "@monorollup/compA",
   "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",

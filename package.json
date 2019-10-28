@@ -1,5 +1,5 @@
 {
-  "name": "rollme2",
+  "name": "monorollup",
   "private": true,
   "workspaces": {
     "packages": [
