@@ -3,7 +3,7 @@ import React from "react";
 class HelloWorldA extends React.Component {
   constructor(props){
     super(props);
-    this.state = { message: "Hello World!" };
+    this.state = { message: "Hello WorldA!" };
   }
   render() {
     return (
