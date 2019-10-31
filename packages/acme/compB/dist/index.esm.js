@@ -3,6 +3,7 @@
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var React = _interopDefault(require('react'));
+var CompA = _interopDefault(require('@monorollup/compA'));
 
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
@@ -73,35 +74,33 @@ function _possibleConstructorReturn(self, call) {
   return _assertThisInitialized(self);
 }
 
-var HelloWorldA =
+var HelloWorldB =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(HelloWorldA, _React$Component);
+  _inherits(HelloWorldB, _React$Component);
 
-  function HelloWorldA(props) {
+  function HelloWorldB(props) {
     var _this;
 
-    _classCallCheck(this, HelloWorldA);
+    _classCallCheck(this, HelloWorldB);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(HelloWorldA).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(HelloWorldB).call(this, props));
     _this.state = {
-      message: "Hello WorldA!"
+      message: "Hello WorldB!"
     };
     return _this;
   }
 
-  _createClass(HelloWorldA, [{
+  _createClass(HelloWorldB, [{
     key: "render",
     value: function render() {
       var _this$state;
 
-      return React.createElement("div", null, React.createElement("h1", null, (_this$state = this.state) === null || _this$state === void 0 ? void 0 : _this$state.message), React.createElement("style", {
-        jsx: true
-      }, "\n          h1 {\n            color: red;\n            background: gray;\n          }\n        "));
+      return React.createElement("div", null, React.createElement("h1", null, (_this$state = this.state) === null || _this$state === void 0 ? void 0 : _this$state.message), React.createElement(CompA, null));
     }
   }]);
 
-  return HelloWorldA;
+  return HelloWorldB;
 }(React.Component);
 
-module.exports = HelloWorldA;
+module.exports = HelloWorldB;

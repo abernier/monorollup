@@ -15,23 +15,30 @@ console.log('cwd', cwd);
 
 const input = path.resolve(cwd, `index.js`);
 const output = path.resolve(cwd, `dist/index.js`);
+const output2 = path.resolve(cwd, `dist/index.esm.js`);
 
 export default {
   input,
-  output: {
-    file: output,
-    format: "cjs"
-  },
+  output: [
+    {
+      file: output,
+      format: "cjs",
+      //sourcemap: true
+    },
+    {
+      file: output2,
+      format: "esm",
+      //sourcemap: true
+    }
+  ],
   plugins: [
     peerDepsExternal(),
     
     // https://rollupjs.org/guide/en/#babel
     babel({
       exclude: /node_modules/, // only transpile our source code (node_modules are supposed to be plain-JS files)
-      sourceMaps: true,
-      //rootMode: "upward",
-      "presets": ["@babel/preset-env", "@babel/preset-react"],
-      "plugins": ["@babel/plugin-proposal-optional-chaining"]
+      rootMode: "upward",
+      sourceMaps: true
     }),
     
     resolve(), // https://rollupjs.org/guide/en/#rollup-plugin-node-resolve
