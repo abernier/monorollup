@@ -38,7 +38,7 @@ export default {
     babel({
       exclude: /node_modules/, // only transpile our source code (node_modules are supposed to be plain-JS files)
       rootMode: "upward",
-      sourceMaps: true
+      //sourceMaps: true
     }),
     
     resolve(), // https://rollupjs.org/guide/en/#rollup-plugin-node-resolve
