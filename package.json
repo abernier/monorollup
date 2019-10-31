@@ -3,7 +3,8 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "packages/acme/*"
+      "packages/acme/compA",
+      "packages/acme/group1/compB"
     ]
   },
   "version": "1.0.0",
