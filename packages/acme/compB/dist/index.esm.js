@@ -1,9 +1,5 @@
-'use strict';
-
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
-
-var React = _interopDefault(require('react'));
-var CompA = _interopDefault(require('@monorollup/compA'));
+import React from 'react';
+import CompA from '@monorollup/compA';
 
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
@@ -103,4 +99,4 @@ function (_React$Component) {
   return HelloWorldB;
 }(React.Component);
 
-module.exports = HelloWorldB;
+export default HelloWorldB;

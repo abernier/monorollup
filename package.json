@@ -10,7 +10,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx lerna exec -- npx rollup -c \\$LERNA_ROOT_PATH/rollup.config.js -f cjs -- index.js",
+    "build": "npx lerna exec -- npx rollup -c \\$LERNA_ROOT_PATH/rollup.config.js -- index.js",
     "release": "npx lerna publish from-package --yes",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
