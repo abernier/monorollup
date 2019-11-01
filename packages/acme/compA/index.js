@@ -1,22 +1,19 @@
-import React from "react";
+import React from "react"
+import styled from "styled-components"
 
-class HelloWorldA extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = { message: "Hello WorldA!" };
+// see: https://www.styled-components.com/docs/basics
+const StyledTest = styled.div`
+  background: papayawhip;
+  color: ${props => props.color || "palevioletred"};
+
+  &:hover {
+    background: ${props => props.color || "palevioletred"};
+    color: papayawhip;
   }
-  render() {
-    return (
-      <div>
-        <h1>{this.state?.message}</h1>
-        <style jsx>{`
-          h1 {
-            color: red;
-            background: gray;
-          }
-        `}</style>
-      </div>
-    );
-  }
+`
+
+function Test(props) {
+  return <StyledTest {...props}>{props.children}</StyledTest>
 }
-export default HelloWorldA;
+
+export default Test

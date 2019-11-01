@@ -15,6 +15,6 @@
   "license": "ISC",
   "peerDependencies": {
     "react": "~16",
-    "styled-jsx": "~3"
+    "styled-components": "~4"
   }
 }
