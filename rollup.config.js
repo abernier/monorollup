@@ -1,47 +1,58 @@
-import path from 'path';
-import replace from 'rollup-plugin-replace';
-import babel from 'rollup-plugin-babel';
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
-import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-//import { uglify } from 'rollup-plugin-uglify';
+import path from 'path'
+import builtins from 'builtin-modules'
+
+import replace from '@rollup/plugin-replace'
+import babel from '@rollup/plugin-babel'
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
 
 const NODE_ENV = process.env.NODE_ENV || "development";
 
 const cwd = process.cwd();
 console.log('cwd', cwd);
 
-//const pkg = require(path.resolve(cwd, "package.json"));
+const pkg = require(path.resolve(cwd, "package.json"));
 
-const input = path.resolve(cwd, `index.js`);
-const output = path.resolve(cwd, `dist/index.js`);
-const output2 = path.resolve(cwd, `dist/index.esm.js`);
+const output1 = path.resolve(cwd, pkg.main || `dist/index.js`);
+const output2 = path.resolve(cwd, pkg.module || `dist/index.esm.js`);
+
+const external = [
+  ...builtins,
+  ...Object.keys(pkg.dependencies || {}),
+  ...Object.keys(pkg.peerDependencies || {})
+];
 
 export default {
-  input,
   output: [
     {
-      file: output,
+      file: output1,
       format: "cjs",
-      //sourcemap: true
+      // sourcemap: true,
+      exports: 'auto' // to disable warning, see: https://rollupjs.org/guide/en/#outputexports
     },
     {
       file: output2,
       format: "esm",
-      //sourcemap: true
+      //sourcemap: true,
     }
   ],
+  external,
   plugins: [
-    peerDepsExternal(),
-    
-    // https://rollupjs.org/guide/en/#babel
+    // https://github.com/rollup/plugins/tree/master/packages/babel
     babel({
       exclude: /node_modules/, // only transpile our source code (node_modules are supposed to be plain-JS files)
-      rootMode: "upward",
-      //sourceMaps: true
+      babelHelpers: 'runtime', // https://github.com/rollup/plugins/tree/master/packages/babel#babelhelpers
+      presets: [
+        "@babel/preset-env",
+        "@babel/preset-react"
+      ],
+      plugins: [
+        "@babel/plugin-transform-runtime",
+        "@babel/plugin-proposal-optional-chaining"
+      ]
     }),
     
-    resolve(), // https://rollupjs.org/guide/en/#rollup-plugin-node-resolve
+    nodeResolve(), // https://rollupjs.org/guide/en/#rollup-plugin-node-resolve
     
     commonjs(), // https://rollupjs.org/guide/en/#rollup-plugin-commonjs
     

@@ -13,8 +13,10 @@ function _taggedTemplateLiteral(strings, raw) {
   }));
 }
 
+var taggedTemplateLiteral = _taggedTemplateLiteral;
+
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  background: papayawhip;\n  color: ", ";\n\n  &:hover {\n    background: ", ";\n    color: papayawhip;\n  }\n"]);
+  var data = taggedTemplateLiteral(["\n  background: papayawhip;\n  color: ", ";\n\n  &:hover {\n    background: ", ";\n    color: papayawhip;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -30,7 +32,7 @@ var StyledTest = styled.div(_templateObject(), function (props) {
 });
 
 function Test(props) {
-  return React.createElement(StyledTest, props, props.children);
+  return /*#__PURE__*/React.createElement(StyledTest, props, props.children);
 }
 
 export default Test;

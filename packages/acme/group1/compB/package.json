@@ -4,6 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
+  "src": "src/index.js",
   "files": [
     "dist"
   ],

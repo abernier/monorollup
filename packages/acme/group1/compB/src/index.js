@@ -2,6 +2,8 @@ import React from "react";
 
 import CompA from '@monorollup/compA'
 
+import foo from './foo.js'
+
 class HelloWorldB extends React.Component {
   constructor(props){
     super(props);

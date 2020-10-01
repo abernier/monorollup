@@ -4,6 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
+  "src": "index.js",
   "files": [
     "dist"
   ],
@@ -15,6 +16,6 @@
   "license": "ISC",
   "peerDependencies": {
     "react": "~16",
-    "styled-components": "~4"
+    "styled-components": "~5"
   }
 }

@@ -1,9 +1,12 @@
 'use strict';
 
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+var React = require('react');
+var styled = require('styled-components');
 
-var React = _interopDefault(require('react'));
-var styled = _interopDefault(require('styled-components'));
+function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+
+var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
+var styled__default = /*#__PURE__*/_interopDefaultLegacy(styled);
 
 function _taggedTemplateLiteral(strings, raw) {
   if (!raw) {
@@ -17,8 +20,10 @@ function _taggedTemplateLiteral(strings, raw) {
   }));
 }
 
+var taggedTemplateLiteral = _taggedTemplateLiteral;
+
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  background: papayawhip;\n  color: ", ";\n\n  &:hover {\n    background: ", ";\n    color: papayawhip;\n  }\n"]);
+  var data = taggedTemplateLiteral(["\n  background: papayawhip;\n  color: ", ";\n\n  &:hover {\n    background: ", ";\n    color: papayawhip;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -27,14 +32,14 @@ function _templateObject() {
   return data;
 }
 
-var StyledTest = styled.div(_templateObject(), function (props) {
+var StyledTest = styled__default['default'].div(_templateObject(), function (props) {
   return props.color || "palevioletred";
 }, function (props) {
   return props.color || "palevioletred";
 });
 
 function Test(props) {
-  return React.createElement(StyledTest, props, props.children);
+  return /*#__PURE__*/React__default['default'].createElement(StyledTest, props, props.children);
 }
 
 module.exports = Test;
