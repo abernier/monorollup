@@ -9,7 +9,7 @@
   },
   "description": "TODO",
   "scripts": {
-    "build": "npx lerna exec -- node \\$LERNA_ROOT_PATH/lazybuild.js",
+    "build": "npx lerna exec -- node \\$LERNA_ROOT_PATH/lazybuild.js && git add $(node \\$LERNA_ROOT_PATH/lerna-exec/foo.js)",
     "test": "echo \"Error: no test specified\" && exit 1",
     "foo": "npx lerna exec -- node \\$LERNA_ROOT_PATH/lerna-exec/foo.js"
   },
@@ -35,7 +35,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn build && npx lerna exec -- node \\$LERNA_ROOT_PATH/lerna-exec/foo.js | git add"
+      "pre-commit": "yarn build"
     }
   }
 }
