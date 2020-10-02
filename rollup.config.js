@@ -9,13 +9,14 @@ import commonjs from '@rollup/plugin-commonjs';
 const NODE_ENV = process.env.NODE_ENV || "development";
 
 const cwd = process.cwd();
-console.log('cwd', cwd);
+// console.log('cwd', cwd);
 
 const pkg = require(path.resolve(cwd, "package.json"));
 
-const output1 = path.resolve(cwd, pkg.main || `dist/index.js`);
-const output2 = path.resolve(cwd, pkg.module || `dist/index.esm.js`);
+const output1 = path.resolve(cwd, pkg.main || `dist/index.js`); // CJS
+const output2 = path.resolve(cwd, pkg.module || `dist/index.esm.js`); // ESM
 
+// External: do not include those module into the bundle (see: https://rollupjs.org/guide/en/#peer-dependencies)
 const external = [
   ...builtins,
   ...Object.keys(pkg.dependencies || {}),
@@ -48,7 +49,7 @@ export default {
       ],
       plugins: [
         "@babel/plugin-transform-runtime",
-        "@babel/plugin-proposal-optional-chaining"
+        // "@babel/plugin-proposal-optional-chaining"
       ]
     }),
     
