@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@monorollup/compA": "^1.0.20",
+    "@monorollup/compA": "^1.0.18",
     "react": "^16.11.0"
   },
   "peerDependencies": {
