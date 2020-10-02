@@ -14,6 +14,6 @@ const StyledTest = styled.div`
 
 function Test(props) {
   return <StyledTest {...props}>{props.children}</StyledTest>
-}
+};
 
 export default Test
