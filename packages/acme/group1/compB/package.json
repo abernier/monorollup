@@ -1,6 +1,6 @@
 {
   "name": "@monorollup/compB",
-  "version": "2.0.12",
+  "version": "2.0.13",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@monorollup/compA": "^1.0.14",
+    "@monorollup/compA": "^1.0.15",
     "react": "^16.11.0"
   },
   "peerDependencies": {
