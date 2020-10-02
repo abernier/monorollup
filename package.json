@@ -10,7 +10,6 @@
   "description": "TODO",
   "scripts": {
     "build": "npx lerna exec -- node \\$LERNA_ROOT_PATH/lazybuild.js",
-    "publishh": "npx lerna publish from-package --no-push",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
