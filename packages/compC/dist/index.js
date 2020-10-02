@@ -1,5 +1,5 @@
 'use strict';
 
-var compC = 3;
+var compC = 4;
 
 module.exports = compC;

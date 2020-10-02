@@ -1,3 +1,3 @@
-var compC = 3;
+var compC = 4;
 
 export default compC;
