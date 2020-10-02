@@ -30,6 +30,7 @@ var StyledTest = styled.div(_templateObject(), function (props) {
 }, function (props) {
   return props.color || "palevioletred";
 });
+console.log('coucou');
 
 function Test(props) {
   return /*#__PURE__*/React.createElement(StyledTest, props, props.children);

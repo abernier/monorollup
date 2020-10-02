@@ -37,6 +37,7 @@ var StyledTest = styled__default['default'].div(_templateObject(), function (pro
 }, function (props) {
   return props.color || "palevioletred";
 });
+console.log('coucou');
 
 function Test(props) {
   return /*#__PURE__*/React__default['default'].createElement(StyledTest, props, props.children);
