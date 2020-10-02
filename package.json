@@ -1,5 +1,4 @@
 {
-  "name": "monorollup",
   "private": true,
   "workspaces": {
     "packages": [
@@ -7,8 +6,7 @@
       "packages/acme/group1/compB"
     ]
   },
-  "version": "1.0.0",
-  "description": "",
+  "description": "TODO",
   "scripts": {
     "build": "npx lerna exec -- node \\$LERNA_ROOT_PATH/lazybuild.js",
     "publishh": "npx lerna publish from-package --no-push",
