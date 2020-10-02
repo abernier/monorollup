@@ -3,7 +3,8 @@
   "workspaces": {
     "packages": [
       "packages/acme/compA",
-      "packages/acme/group1/compB"
+      "packages/acme/group1/compB",
+      "packages/compC"
     ]
   },
   "description": "TODO",
