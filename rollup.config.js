@@ -13,6 +13,8 @@ const cwd = process.cwd();
 
 const pkg = require(path.resolve(cwd, "package.json"));
 
+const input =  path.resolve(cwd, pkg.src || `index.js`); // `index.js` as our default entrypoint (if not specified in the `rollup` command)
+
 const output1 = path.resolve(cwd, pkg.main || `dist/index.cjs.js`); // CJS
 const output2 = path.resolve(cwd, pkg.module || `dist/index.esm.js`); // ESM
 
@@ -24,6 +26,7 @@ const external = [
 ];
 
 export default {
+  input,
   output: [
     {
       file: output1,
