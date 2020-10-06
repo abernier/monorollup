@@ -13,7 +13,7 @@ const cwd = process.cwd();
 
 const pkg = require(path.resolve(cwd, "package.json"));
 
-const output1 = path.resolve(cwd, pkg.main || `dist/index.js`); // CJS
+const output1 = path.resolve(cwd, pkg.main || `dist/index.cjs.js`); // CJS
 const output2 = path.resolve(cwd, pkg.module || `dist/index.esm.js`); // ESM
 
 // External: do not include those module into the bundle (see: https://rollupjs.org/guide/en/#peer-dependencies)

@@ -2,7 +2,7 @@
   "name": "@monorollup/compA",
   "version": "3.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "src": "index.js",
   "files": [

@@ -2,8 +2,9 @@
   "name": "@monorollup/compC",
   "version": "1.0.2",
   "description": "",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "src": "index.js",
-  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
