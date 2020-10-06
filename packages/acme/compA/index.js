@@ -12,7 +12,7 @@ const StyledTest = styled.div`
   }
 `
 
-console.log('coucouu')
+console.log('coucouuu')
 
 function Test(props) {
   return <StyledTest {...props}>{props.children}</StyledTest>
