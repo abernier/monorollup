@@ -32,10 +32,5 @@
     "lerna": "^3.22.1",
     "rollup": "^2.28.2",
     "uptodeps": "^1.1.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn build && yarn adddistfiles"
-    }
   }
 }
