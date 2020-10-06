@@ -2,9 +2,9 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "packages/acme/compA",
-      "packages/acme/group1/compB",
-      "packages/compC"
+      "packages/acme/comp-a",
+      "packages/acme/group1/comp-b",
+      "packages/comp-c"
     ]
   },
   "description": "TODO",

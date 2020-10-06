@@ -1,5 +1,5 @@
 {
-  "name": "@monorollup/compB",
+  "name": "@monorollup/comp-b",
   "publishConfig": {
     "access": "public"
   },
@@ -18,11 +18,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@monorollup/compA": "^1.0.21",
+    "@monorollup/comp-a": "^1.0.21",
     "react": "^16.11.0"
   },
   "peerDependencies": {
-    "@monorollup/compA": "~1",
+    "@monorollup/comp-a": "~1",
     "react": "~16"
   }
 }

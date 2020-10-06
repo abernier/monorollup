@@ -1,25 +1,17 @@
 {
-  "name": "@monorollup/compA",
+  "name": "@monorollup/comp-c",
   "publishConfig": {
     "access": "public"
   },
-  "version": "3.0.5",
+  "version": "1.0.4",
   "description": "",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "src": "index.js",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "peerDependencies": {
-    "react": "~16",
-    "styled-components": "~5"
-  },
-  "gitHead": "9a755855f3491d55d16a0bcd42306219eaabd2d9"
+  "license": "ISC"
 }
