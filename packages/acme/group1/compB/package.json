@@ -1,5 +1,8 @@
 {
   "name": "@monorollup/compB",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "2.0.22",
   "description": "",
   "main": "dist/index.cjs.js",

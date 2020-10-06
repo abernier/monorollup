@@ -1,5 +1,8 @@
 {
   "name": "@monorollup/compA",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "3.0.3",
   "description": "",
   "main": "dist/index.cjs.js",
@@ -17,5 +20,6 @@
   "peerDependencies": {
     "react": "~16",
     "styled-components": "~5"
-  }
+  },
+  "gitHead": "9a755855f3491d55d16a0bcd42306219eaabd2d9"
 }
