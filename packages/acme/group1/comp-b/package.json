@@ -22,7 +22,7 @@
     "react": "^16.11.0"
   },
   "peerDependencies": {
-    "@monorollup/comp-a": "~1",
+    "@monorollup/comp-a": "~3",
     "react": "~16"
   }
 }

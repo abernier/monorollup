@@ -12,10 +12,10 @@ const StyledTest = styled.div`
   }
 `
 
-console.log('hey')
+console.log('heyy')
 
 function Test(props) {
-  return <StyledTest {...props}>{props.children}</StyledTest>
+  return <StyledTest {...props}>CompA: {props.children}</StyledTest>
 };
 
 export default Test
